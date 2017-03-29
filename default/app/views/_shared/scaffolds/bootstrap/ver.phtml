@@ -1,5 +1,4 @@
-
-<?php View::content() ?>
+<?php View::content() ?> 
 <?php if ($data) : ?>
     <?php foreach ($data->fields as $field) : ?>
         <p><strong><?= $data->alias[$field] ?> :</strong>  <?= h($data->$field) ?></p>
@@ -19,4 +18,3 @@
         <a href="../crear/">Crear registro</a>
     </div>
 <?php endif ?>
-</div>
